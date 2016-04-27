@@ -20,7 +20,7 @@ namespace Neuron
             this.trainingSet = trainingSet;
             this.net = net;
         }
-        public void Train(int populationSize=3000, int maxGenerations=3000)
+        public void Train(int populationSize=3000, int maxGenerations= 6000)
         {
             Init(populationSize, net.WeightsNeeded);
 
