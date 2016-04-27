@@ -69,11 +69,10 @@ namespace Neuron
             }
 
             // clamp outputs (optional but helps NN training)
-            
             for (var i = 0; i < outputs.Length; i++)
             {
-                if (outputs[i] < 0.01) outputs[i] = 0;
-                else if (outputs[i] > 0.99) outputs[i] = 1;
+                if (outputs[i] < 0.05) outputs[i] = 0;
+                else if (outputs[i] > 0.95) outputs[i] = 1;
             }            
             return outputs;
         }
